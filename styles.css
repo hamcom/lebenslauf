@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #afafaf;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+.container.left {
+    left: 0;
+}
+.container.right {
+    left: 50%;
+}
+.content {
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+.left .content {
+    margin-left: 40px;
+}
+.right .content {
+    margin-right: 40px;
+}
+.branch {
+    position: absolute;
+    left: 50%;
+    width: 3px;
+    background-color: #afafaf;
+}
+.commit {
+    width: 20px;
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.commit.left {
+    left: calc(50% - 10px);
+}
+.commit.right {
+    right: calc(50% - 10px);
+}

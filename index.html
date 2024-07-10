@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebenslauf Visualisierung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="timeline">
+    <!-- Main branch -->
+    <div class="container left">
+        <div class="content">
+            <h2>2024</h2>
+            <p>Masterabschluss in Informatik und Job bei Firma ABC</p>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="content">
+            <h2>2023</h2>
+            <p>Weiterbildung in Webentwicklung</p>
+        </div>
+    </div>
+    <div class="container left">
+        <div class="content">
+            <h2>2022</h2>
+            <p>Bachelorabschluss in Informatik</p>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="content">
+            <h2>2021</h2>
+            <p>Praktikum bei Firma XYZ</p>
+        </div>
+    </div>
+    <div class="container left">
+        <div class="content">
+            <h2>2020</h2>
+            <p>Beginn Bachelorstudium</p>
+        </div>
+    </div>
+
+    <!-- School branch -->
+    <div class="container left">
+        <div class="branch" style="top: 50px; height: calc(50% - 50px);"></div>
+        <div class="commit left" style="top: 50px;"></div>
+        <div class="commit left" style="top: calc(50% - 50px);"></div>
+    </div>
+    <div class="container right">
+        <div class="branch" style="top: calc(50% + 50px); height: calc(100% - 50px);"></div>
+        <div class="commit right" style="top: calc(50% + 50px);"></div>
+        <div class="commit right" style="top: calc(100% - 50px);"></div>
+    </div>
+
+    <!-- Work branch -->
+    <div class="container right">
+        <div class="branch" style="top: 0; height: 50%;"></div>
+        <div class="commit right" style="top: 0;"></div>
+        <div class="commit right" style="top: 50%;"></div>
+    </div>
+</div>
+
+</body>
+</html>
